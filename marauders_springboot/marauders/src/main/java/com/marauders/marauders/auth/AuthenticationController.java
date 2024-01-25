@@ -1,5 +1,6 @@
 package com.marauders.marauders.auth;
 
+import com.marauders.marauders.healthCheck.HealthCheckResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,9 +24,10 @@ public class AuthenticationController {
         return ResponseEntity.ok(service.authenticate(request));
     }
     @GetMapping("/healthCheck")
-    public ResponseEntity<Boolean> healthCheck(
+    public ResponseEntity<HealthCheckResponse> healthCheck(
 
     ) {
-        return ResponseEntity.ok(Boolean.TRUE);
+        var res = HealthCheckResponse.builder().res("Health check is OK.").build();
+        return ResponseEntity.ok(res);
     }
 }
