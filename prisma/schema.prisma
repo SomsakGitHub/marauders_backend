@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Tset_db {
+model Test_CRUD {
   id    Int     @default(autoincrement()) @id
   note String
 }
