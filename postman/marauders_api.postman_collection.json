@@ -1,8 +1,8 @@
 {
 	"info": {
-		"_postman_id": "97ec41c9-1f6d-4c0e-bf67-6474738660fd",
+		"_postman_id": "0cfe6d28-b724-48e1-8a02-6955260e61c4",
 		"name": "marauders_api",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16467027"
 	},
 	"item": [
@@ -14,7 +14,16 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{host}}/CRUD/getAll"
+						"url": {
+							"raw": "{{host}}/CRUD/getAll",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"CRUD",
+								"getAll"
+							]
+						}
 					},
 					"response": []
 				},
@@ -32,7 +41,16 @@
 								}
 							}
 						},
-						"url": "{{host}}/CRUD/add"
+						"url": {
+							"raw": "{{host}}/CRUD/add",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"CRUD",
+								"add"
+							]
+						}
 					},
 					"response": []
 				},
@@ -50,7 +68,17 @@
 								}
 							}
 						},
-						"url": "{{host}}/CRUD/update/3"
+						"url": {
+							"raw": "{{host}}/CRUD/update/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"CRUD",
+								"update",
+								"3"
+							]
+						}
 					},
 					"response": []
 				},
@@ -59,7 +87,17 @@
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{host}}/CRUD/delete/3"
+						"url": {
+							"raw": "{{host}}/CRUD/delete/3",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"CRUD",
+								"delete",
+								"3"
+							]
+						}
 					},
 					"response": []
 				}
@@ -79,7 +117,18 @@
 						}
 					}
 				},
-				"url": "{{host}}/api/v1/auth/register"
+				"url": {
+					"raw": "{{host}}/api/v1/auth/register",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"auth",
+						"register"
+					]
+				}
 			},
 			"response": []
 		},
@@ -97,7 +146,16 @@
 						}
 					}
 				},
-				"url": "{{host}}/user/login"
+				"url": {
+					"raw": "{{host}}/user/login",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
 			},
 			"response": []
 		},
@@ -106,7 +164,16 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{host}}/user/getAll"
+				"url": {
+					"raw": "{{host}}/user/getAll",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"user",
+						"getAll"
+					]
+				}
 			},
 			"response": []
 		},
@@ -115,7 +182,12 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "{{BASE_URL}}"
+				"url": {
+					"raw": "{{BASE_URL}}",
+					"host": [
+						"{{BASE_URL}}"
+					]
+				}
 			},
 			"response": []
 		}
